@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .mw-1440 {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .mw-1280 {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .circle {
+    border-radius: 50%;
+    height: 52px;
+    width: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .shadow-container {
+    box-shadow: 10px 10px 60px grey;
+    background-color: white;
+  }
+  .purple-font {
+    color: #57475b;
+  }
+  .purple-btn {
+    border: solid 1px #57475b;
+    background: #57475b;
+    color: white;
+    transition: all 0.3s ease;
+    padding: 20px 46px;
+    border-radius: 999px;
+    display: block;
+    margin: 20px auto 0;
+  }
+  .purple-btn:hover {
+    background: white;
+    color: #57475b;
+  }
+  .hover-rotate {
+    position: absolute;
+    transition: all 0.2s ease;
+  }
+  .hover-rotate:hover {
+    transform: rotate(180deg);
+  }
+}
