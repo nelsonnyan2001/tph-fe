@@ -490,6 +490,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -686,6 +689,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover-rotate:hover {
     transform: rotate(180deg);
   }
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+  }
+@media (max-width: 640px) {
+    .bottom-grid {
+      grid-template-columns: 100%;
+    }
+  }
+@media (min-width: 640px) {
+
+  .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+}
 @media (min-width: 768px) {
 
   .md\:mt-8 {

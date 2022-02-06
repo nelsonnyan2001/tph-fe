@@ -8,9 +8,6 @@ module.exports = {
             }
         },
     },
-    content: {
-        enabled: true,
-        content: ['./src/**/*.html']
-    },
+    content: ['./src/**/*.html'],
     plugins: [],
 }
